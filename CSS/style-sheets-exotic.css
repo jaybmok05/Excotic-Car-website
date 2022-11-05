@@ -1,0 +1,238 @@
+/*=====CSS reset======*//*we have to reset to avoid any problem*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*======font primary font installation====*/
+@font-face{
+	font-family: "Roboto-Regular";
+	src: url("../fonts/Roboto-Regular.ttf") format("TrueType")
+}
+/*======Foundation styles=======*/
+body{
+	font-size: 15px;
+	font-family: "Roboto-Regular", Arial,sans-serif ;
+}
+.container{
+	width: 1114px;
+	height: 100%;
+	margin: 0px auto;
+}
+/*===========WEB HEADER===============*/
+.web-header{
+	width: 100%;
+	height: 65px;
+	background: rgba(0,0,0,0.9);
+	box-sizing: border-box;
+	position: absolute;
+	top: 0px ;
+	left: 0px;
+}
+.web-header img{
+	float: left;
+	width: 120px;	
+}
+.web-header .nav-items{
+	float: right;
+}
+.web-header .container{
+	padding-top: 28px;
+}
+.nav-items{
+	word-spacing: 100px;
+	line-height: 18px;
+}
+.nav-items a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+}
+a:hover{
+	color: #ca0500;
+
+}
+/*===========BANNER===============*/
+.banner{
+	width: 100%;
+	height: 612px;
+	background: url(../images/banner.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-sizing: border-box;
+	
+
+}
+.banner-content{
+	text-align: center;
+	padding-top: 242px;
+	color: #fff;
+	line-height: 64px;
+	
+}
+h1{
+	font-size: 60px;
+	text-transform: uppercase;
+	letter-spacing: 6px;
+}
+.banner a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+	display: block;
+	background: #ca0500;
+	margin: 0px auto;
+	box-sizing: border-box;
+
+	width: 168px;
+	height: 48px;
+	line-height: 50px;
+}
+.banner a:hover{
+	background: #830502;
+	border: 1px solid #ca0500;
+}
+/*===========MAIN-ARTICLES===============*/
+.articles{
+	padding-top: 64px;
+	line-height: 24px;
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(-5deg, #ffffff 0%, #ffffff 50%, #1b1b1b 50%, #1b1b1b 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-5deg, #ffffff 0%,#ffffff 50%,#1b1b1b 50%,#1b1b1b 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(95deg, #ffffff 0%,#ffffff 50%,#1b1b1b 50%,#1b1b1b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+article{
+	padding-bottom: 150px;
+}
+article:first-child{
+	width: 445px;
+	float: left;
+}
+article:last-child{
+	width: 445px;
+	float: right;
+	color: #fff;
+}
+.articles h2{
+	font-size: 36px;
+	padding-bottom: 38px;
+}
+h2::after{
+	content: ".";
+	font-size: 0px;
+	display: block;
+	background: #ca0500;
+	width: 38px;
+	height: 3px;
+	margin-top: 36px;
+}
+.quote{
+	font-size: 22px ;
+	font-style: italic;
+}
+.articles>.container::after, .web-footer>.container::after{
+	content: '.';
+	font-size: 0;
+	height: 1px;
+	width: 100%;
+	display: block;
+	clear: both;
+}
+/*===========Footer===============*/
+.web-footer{
+	clear: both;
+	padding-top: 25px;
+	background: #111111;
+	color: #fff;
+	line-height: 30px;
+
+}
+.footer-column{
+	float: left;
+	width: 25%;
+	box-sizing: border-box;
+	margin-bottom: 50px;
+
+
+}
+h3{
+	font-size: 13px;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+h3::after{
+	content: ".";
+	font-size: 0px;
+	display: block;
+	background: #292929;
+	width: 220px;
+	height: 2px;
+	margin-top: 15px;
+
+}
+.web-footer a{
+	text-decoration: none;
+	color: #999999;
+}
+.web-footer a:hover{
+	color: #fff;
+}
+.copy {
+	color: #585858;
+	margin-top: 32px;
+}
+.social a {
+	display: block;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	background: #000;
+	color: #fff;
+	text-align: center;
+	line-height: 44px;
+}
+.social a:hover {
+	background: #fff;
+	color: #ff0000;
+}
+.social li {
+	display: inline-block;
+}
